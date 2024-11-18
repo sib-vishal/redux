@@ -12,6 +12,9 @@ const TodoForm = () => {
     if (input.trim()) {
       dispatch(addTodo(input));
       setInput(''); // Reset input field
+    }else{
+      alert('Please enter a valid todo.');
+      setInput(''); // Reset input field if invalid input is provided.
     }
   };
 
